@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#slowhide").click(function(){
+        $("p").hide("slow",function(){
+	});
+    });
+    $("#hide").click(function(){
+    $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+    $("#fade").click(function(){
+	$("p").fadeIn();
+    });
+	
+});
+</script> 
+</head>
+<body>
+
+<button id="slowhide">逐漸消失</button>
+<button id="hide">隱藏</button>
+<button id="show">出現</button>
+<button id="fade">逐漸出現</button>
+
+
+<p><img src="http://i.cdn.turner.com/nba/nba/.element/img/1.0/teamsites/logos/teamlogos_500x500/lal.png"></p>
+
+
+
+</body>
+</html>

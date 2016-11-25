@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+$("button1").click(function(){
+$("p:first").hide();
+});
+});
+$(document).ready(function(){
+$("button2").click(function(){
+$("#test1").hide();
+});
+});
+$(document).ready(function(){
+$("button3").click(function(){
+$(".test2").hide();
+});
+});
+</script>
+</head>
+<body>
+<h2>Web Programming</h2>
+<p>Hide Paragraph 1</p>
+<p id="test1">Hide Paragraph 2</p>
+<p class="test2">Hide Paragraph 3</p>
+<button><button1>Click me p1 hide</button1></button>
+<button><button2 id="test1">Click me p2 hide</button2></button>
+<button><button3>Click me p3 hide</button3></button>
+</body>
+</html>
